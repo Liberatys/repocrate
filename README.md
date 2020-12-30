@@ -32,14 +32,4 @@ an entry to the **repocrate** config and can sleep in peacy.
 
 ## TODO
 
-- [ ] Add a progress bar
-- [ ] More feedback to the user on the state of updating packages
-- [ ] Test for more applications that just git repositories
-- [ ] Use more than one thread to build stuff
-- [ ] Validation of the configuration
-    - [ ] Duplicate packages ?
-    - [ ] Invalid path
-    - [ ] Invalid input
-- [ ] Push to https://rubygems.org
-- [ ] Think about adding an **install** command with configurations for some of the most used projects
-
+#1
