@@ -1,0 +1,29 @@
+PATH
+  remote: .
+  specs:
+    repocrate (0.1.0)
+      colorize (~> 0)
+      commander (~> 4.0)
+      toml (~> 0.2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.8.1)
+    commander (4.5.2)
+      highline (~> 2.0.0)
+    highline (2.0.3)
+    parslet (1.8.2)
+    rake (12.3.3)
+    toml (0.2.0)
+      parslet (~> 1.8.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake (~> 12.0)
+  repocrate!
+
+BUNDLED WITH
+   2.1.4
