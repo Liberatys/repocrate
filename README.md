@@ -32,4 +32,4 @@ an entry to the **repocrate** config and can sleep in peacy.
 
 ## TODO
 
-#1
+[TODO-List Issue](https://github.com/Liberatys/repocrate/issues/1)
