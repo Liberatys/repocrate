@@ -1,6 +1,6 @@
 # RepoCrate
 
-A small utility to update the applications that are installed from source.
+A small utility to update / manage the applications that are installed from source.
 
 ## Usage
 
