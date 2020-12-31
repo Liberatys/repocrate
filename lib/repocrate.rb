@@ -1,5 +1,6 @@
 require "repocrate/version"
 require "repocrate/cli/updater"
+require "repocrate/cli/installer"
 require "repocrate/cli/configuration"
 require 'repocrate/version'
 
@@ -20,7 +21,17 @@ module Repocrate
         c.summary = 'Install all crates defined in your config file that are not found in the crate directory'
         c.description = 'Reinstall all missing crates in the config file'
         c.action do |args, options|
-          p "YOU KNOW NOTHING"
+          Installer.new(configuration).run
+        end
+      end
+
+      command 'sync'.to_sym do |c|
+        c.syntax = 'repocrate sync'
+        c.summary = 'Install and update all crates'
+        c.description = 'Install and update all crates'
+        c.action do |args, options|
+          Installer.new(configuration).run
+          Updater.new(configuration).run
         end
       end
         

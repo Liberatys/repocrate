@@ -4,21 +4,30 @@ A small utility to update the applications that are installed from source.
 
 ## Usage
 
-    repocrate update
+    repocrate update # To update all crates in the config
+
+    repocrate install # Install all missing crates in the config
+
+    repocrate sync # Install and update all crates
+
+    repocrate help # Well help I guess :D
 
 **Configuration**
 
     $HOME/.config/repocrate/conf.toml
 
     [nnn]
-
     crate = "~/dev/code/open_source/nnn"
     update_cmd = "git pull"
     build_cmd = "make O_NERD=1"
     post_build_cmd = "mv nnn /usr/local/bin/"
+    install_command = "git clone https://github.com/jarun/nnn"
 
-    [git]
-    ...
+    [neofetch]
+    crate = "~/dev/code/open_source/neofetch"
+    update_cmd = "git pull"
+    build_cmd = "make PREFIX=/usr/local install"
+    install_command = "git clone https://github.com/dylanaraps/neofetch"
 
 
 ## Why ?
