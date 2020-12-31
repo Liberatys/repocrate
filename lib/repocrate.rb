@@ -14,7 +14,16 @@ module Repocrate
 
       configuration = Configuration.new(File.expand_path("~/.config/repocrate/conf.toml"))
       configuration.load
-
+      
+      command 'install'.to_sym do |c|
+        c.syntax = 'repocrate install'
+        c.summary = 'Install all crates defined in your config file that are not found in the crate directory'
+        c.description = 'Reinstall all missing crates in the config file'
+        c.action do |args, options|
+          p "YOU KNOW NOTHING"
+        end
+      end
+        
       command 'update'.to_sym do |c|
         c.syntax = 'repocrate update [options]'
         c.summary = 'Update crates defined in the configuration file'
