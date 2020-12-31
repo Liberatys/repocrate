@@ -12,7 +12,7 @@ module Repocrate
       program :version, Repocrate::VERSION
       program :description, 'repocrate'
 
-      configuration = Configuration.new("/Users/romanicus/.config/repocrate/conf.toml")
+      configuration = Configuration.new(File.expand_path("~/.config/repocrate/conf.toml"))
       configuration.load
 
       command 'update'.to_sym do |c|

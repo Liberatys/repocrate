@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'toml', '~> 0.2.0'
   spec.add_dependency 'colorize', '~> 0'
   spec.add_dependency 'commander', '~> 4.0'
+  spec.add_dependency 'ruby-progressbar', '~> 1.11'
 end
