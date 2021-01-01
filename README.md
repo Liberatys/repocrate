@@ -37,7 +37,7 @@ stuff that I don't like. (Remove pane border in tmux etc.).
 Thus my open_source folder(where I have all my repos) gets crowded from time to time.
 
 So rather than going into each directory and lookup how to build that repo, I just add
-an entry to the **repocrate** config and can sleep in peacy.
+an entry to the **repocrate** config and can sleep in peace.
 
 ## TODO
 
